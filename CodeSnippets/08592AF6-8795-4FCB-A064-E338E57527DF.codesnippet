@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initAlertVC</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UIAlertController* alertVC = [UIAlertController alertControllerWithTitle:@"" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"" style:UIAlertActionStyleCancel handler:&lt;#^(UIAlertAction * _Nonnull action)handler#&gt;]];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"" style:UIAlertActionStyleDefault handler:&lt;#^(UIAlertAction * _Nonnull action)handler#&gt;]];
+    
+    [self presentViewController:alertVC animated:YES completion:nil];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>08592AF6-8795-4FCB-A064-E338E57527DF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>initAlertVC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>initAlertVC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

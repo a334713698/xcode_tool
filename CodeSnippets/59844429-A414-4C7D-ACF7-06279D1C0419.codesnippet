@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>zuowenxiuQNUploadImage</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[_uploadImgNetRequest QNUploadImageWithImageArr:&lt;#..#&gt; WithProgressBlock:nil WithErrorBlock:^(id errorCode) {
+        [MBProgressHUD hideHUD];
+        [WINDOW makeToast:@"网络错误"];
+    } WithFailureBlock:^{
+        [MBProgressHUD hideHUD];
+        [WINDOW makeToast:@"上传失败"];
+    } WithSuccessBlock:^(id responseObject) {
+        [MBProgressHUD hideHUD];
+        DLog(@"%@",responseObject);
+//        responseObject[@"data"]
+
+    }];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>59844429-A414-4C7D-ACF7-06279D1C0419</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>zuowenxiuQNUploadImage</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>zuowenxiuQNUploadImage</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

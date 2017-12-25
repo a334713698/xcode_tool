@@ -3,29 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>createLabel</string>
+	<string>SectionHeight_TableView_For_iOS11</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        UILabel* &lt;#...#&gt; = [UILabel new];
-        [self addSubview:&lt;#...#&gt;];
-        &lt;#...#&gt;.font = [UIFont systemFontOfSize:&lt;#...#&gt;];
-        &lt;#...#&gt;.text  = @"";
-        &lt;#...#&gt;.textColor = &lt;#...#&gt;;
-        [&lt;#...#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
-
-        }];
+	<string>        if ([[[UIDevice currentDevice] systemVersion] doubleValue] &gt; 11.0) {
+            _tableView.estimatedSectionHeaderHeight = 10;
+            _tableView.estimatedSectionFooterHeight = 0.01;
+        }
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F07E5F77-9CEB-4082-8C75-60E0C3B0A7E4</string>
+	<string>1FCFFDB6-9825-4144-BEBE-2539F9B09915</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>createLabel</string>
+	<string>SectionHeight_TableView_For_iOS11</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>createLabel</string>
+	<string>SectionHeight_TableView_For_iOS11</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

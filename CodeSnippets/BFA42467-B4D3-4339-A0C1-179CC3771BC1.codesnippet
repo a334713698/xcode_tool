@@ -3,32 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>createLabel</string>
+	<string>pstrong_tableView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        UILabel* &lt;#...#&gt; = [UILabel new];
-        [self addSubview:&lt;#...#&gt;];
-        &lt;#...#&gt;.font = [UIFont systemFontOfSize:&lt;#...#&gt;];
-        &lt;#...#&gt;.text  = @"";
-        &lt;#...#&gt;.textColor = &lt;#...#&gt;;
-        [&lt;#...#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
-
-        }];
+	<string>@property (nonatomic, strong) UITableView *tableView;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F07E5F77-9CEB-4082-8C75-60E0C3B0A7E4</string>
+	<string>BFA42467-B4D3-4339-A0C1-179CC3771BC1</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>createLabel</string>
+	<string>pstrong_tableView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>createLabel</string>
+	<string>pstrong_tableView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

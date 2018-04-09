@@ -3,25 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pTableView</string>
+	<string>initViewFunc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) UITableView *tableView;
-</string>
+	<string>- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BFA42467-B4D3-4339-A0C1-179CC3771BC1</string>
+	<string>C6EC21A1-B3E3-444D-B333-920FEE725535</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>pTableView</string>
+	<string>initViewFunc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pTableView</string>
+	<string>initViewFunc</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

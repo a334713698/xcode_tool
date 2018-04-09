@@ -13,12 +13,12 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self initSubview];
+        [self setupView];
     }
     return self;
 }
 
-- (void)initSubview{
+- (void)setupView{
     
 }
 </string>

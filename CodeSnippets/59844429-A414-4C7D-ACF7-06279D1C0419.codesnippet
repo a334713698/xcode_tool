@@ -3,33 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>zuowenxiuQNUploadImage</string>
+	<string>createButton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>StringOrComment</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[_uploadImgNetRequest QNUploadImageWithImageArr:&lt;#..#&gt; WithProgressBlock:nil WithErrorBlock:^(id errorCode) {
-        [MBProgressHUD hideHUD];
-        [WINDOW makeToast:@"网络错误"];
-    } WithFailureBlock:^{
-        [MBProgressHUD hideHUD];
-        [WINDOW makeToast:@"上传失败"];
-    } WithSuccessBlock:^(id responseObject) {
-        [MBProgressHUD hideHUD];
-        DLog(@"%@",responseObject);
-//        responseObject[@"data"]
-
-    }];
-</string>
+	<string></string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>59844429-A414-4C7D-ACF7-06279D1C0419</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>zuowenxiuQNUploadImage</string>
+	<string>createButton</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>zuowenxiuQNUploadImage</string>
+	<string>createButton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

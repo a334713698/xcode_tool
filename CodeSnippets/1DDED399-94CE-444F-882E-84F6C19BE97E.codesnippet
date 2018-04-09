@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initControllerWithViewModel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) &lt;#class#&gt; *tableViewModel;
+@property (nonatomic, strong) &lt;#class#&gt; *viewModel;
+
+#pragma mark - lazy load
+- (UITableView *)tableView{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+        [self.view addSubview:_tableView];
+    }
+    return _tableView;
+}
+
+- (&lt;#class#&gt; *)tableViewModel{
+    if (!_tableViewModel) {
+        _tableViewModel = [&lt;#class#&gt; new];
+    }
+    return _tableViewModel;
+}
+
+- (&lt;#class#&gt; *)viewModel{
+    if (!_viewModel) {
+        _viewModel = [&lt;#class#&gt; new];
+    }
+    return _viewModel;
+}
+
+#pragma mark - view func
+
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    
+    [self initNav];
+    [self setupTableView];
+    
+    self.view.backgroundColor = BACKGROUND_COLOR;
+}
+
+
+#pragma mark - SEL
+
+
+#pragma mark - Method
+- (void)initNav{
+
+}
+
+/**
+ *  tableView的一些初始化工作
+ */
+- (void)setupTableView{
+    [self.tableViewModel handleWithTable:self.tableView];
+    
+    WS(weakSelf)
+    self.tableViewModel.didSelectItemBlock = ^(NSIndexPath *indexPath, NSDictionary *info) {
+        
+    };
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1DDED399-94CE-444F-882E-84F6C19BE97E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>initControllerWithViewModel</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>initControllerWithViewModel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

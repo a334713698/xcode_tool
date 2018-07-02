@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initNetRequest-QM</string>
+	<string>initNetRequestWithHandler</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)init&lt;#...#&gt;{
+	<string>- (void)init&lt;#...#&gt;Complete:(QMCompletionHandler)handeler{
     if (!&lt;#...#&gt;) {
         &lt;#...#&gt; = [[&lt;#...#&gt; alloc] initWithApiUrl:@"&lt;#...#&gt;"];
         &lt;#...#&gt;.httpMethod = @"POST";
     }
     
     
-    WS(weakSelf)
+
     [&lt;#...#&gt; netRequestWithReturnValeuBlock:^(id returnValue) {
         DLog(@"%@",[returnValue mj_JSONString]);
         [QMProgressHUD showSuccess:@"成功"];
-        
+        handeler(returnValue[@"Data"], nil);
     } WithErrorCodeBlock:^(id errorCode) {
         DLog(@"请求失败。%@",errorCode);
         [QMProgressHUD showError:errorCode[@"Message"]];
@@ -31,13 +31,13 @@
 }
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6728BBF1-5173-4AC5-AD4C-30A7DF5C7758</string>
+	<string>3E5A932D-9A5D-4838-B76E-0FC45521AF75</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>initNetRequest-QM</string>
+	<string>initNetRequestWithHandler</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>initNetRequest-QM</string>
+	<string>initNetRequestWithHandler</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -11,8 +11,8 @@
 	<key>IDECodeSnippetContents</key>
 	<string>    UIAlertController* alertVC = [UIAlertController alertControllerWithTitle:@"" message:@"" preferredStyle:UIAlertControllerStyleAlert];
     
-    [alertVC addAction:[UIAlertAction actionWithTitle:@"" style:UIAlertActionStyleCancel handler:&lt;#^(UIAlertAction * _Nonnull action)handler#&gt;]];
-    [alertVC addAction:[UIAlertAction actionWithTitle:@"" style:UIAlertActionStyleDefault handler:&lt;#^(UIAlertAction * _Nonnull action)handler#&gt;]];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:&lt;#^(UIAlertAction * _Nonnull action)handler#&gt;]];
+    [alertVC addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:&lt;#^(UIAlertAction * _Nonnull action)handler#&gt;]];
     
     [self presentViewController:alertVC animated:YES completion:nil];
 </string>

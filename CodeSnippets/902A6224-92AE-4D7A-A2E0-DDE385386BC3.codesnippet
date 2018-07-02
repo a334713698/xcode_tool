@@ -3,29 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initViewFunc</string>
+	<string>pBlock</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    
-}
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    
-}</string>
+	<string>@property (nonatomic, copy) &lt;#...#&gt; &lt;#...#&gt;;
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C6EC21A1-B3E3-444D-B333-920FEE725535</string>
+	<string>902A6224-92AE-4D7A-A2E0-DDE385386BC3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>initViewFunc</string>
+	<string>pBlock</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>initViewFunc</string>
+	<string>pBlock</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

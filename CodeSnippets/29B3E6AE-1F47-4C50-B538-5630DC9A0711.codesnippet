@@ -17,6 +17,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.showsVerticalScrollIndicator = NO;
+        _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0.01, 0.01)];
         _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0.01, adaptHeight(10))];
         if ([[[UIDevice currentDevice] systemVersion] doubleValue] &gt; 11.0) {
             _tableView.estimatedSectionHeaderHeight = 10;
@@ -32,7 +33,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>29B3E6AE-1F47-4C50-B538-5630DC9A0711</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>lazyloadTableView</string>
 	<key>IDECodeSnippetTitle</key>

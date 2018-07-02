@@ -18,6 +18,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.showsVerticalScrollIndicator = NO;
+        _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0.01, 0.01)];
         _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0.01, adaptHeight(10))];
         if ([[[UIDevice currentDevice] systemVersion] doubleValue] &gt; 11.0) {
             _tableView.estimatedSectionHeaderHeight = 10;

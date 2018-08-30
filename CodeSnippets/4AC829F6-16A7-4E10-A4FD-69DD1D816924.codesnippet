@@ -3,24 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>foriiiiiiiiii</string>
+	<string>pCollectionView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    for (NSInteger i = 0; i &lt; &lt;#……#&gt;; i++) {
-        
-    }
+	<string>@property (nonatomic, strong) UICollectionView *collectionView;
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>61CD663B-93A8-4354-B043-BA6E238C39E4</string>
+	<string>4AC829F6-16A7-4E10-A4FD-69DD1D816924</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>foriiiiiiiiii</string>
+	<string>pCollectionView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>foriiiiiiiiii</string>
+	<string>pCollectionView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

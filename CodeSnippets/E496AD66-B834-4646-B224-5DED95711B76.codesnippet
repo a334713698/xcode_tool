@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazyloadCollectionView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UICollectionView *)collectionView{
+    if (!_collectionView) {
+        UICollectionViewFlowLayout* flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        CGFloat itemWidth = adaptWidth(153);
+        CGFloat itemHeight = adaptHeight(85);
+        flowLayout.itemSize = CGSizeMake(itemWidth, itemHeight);
+        flowLayout.minimumInteritemSpacing = adaptWidth(30); //项间隔
+        flowLayout.minimumLineSpacing = adaptHeight(20); //行间隔
+        flowLayout.sectionInset = UIEdgeInsetsMake(adaptHeight(63), adaptWidth(20), 0, adaptWidth(20));
+        flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
+        [self.view addSubview:_collectionView];
+        _collectionView.backgroundColor = [UIColor redColor];
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        _collectionView.showsVerticalScrollIndicator = NO;
+        _collectionView.showsHorizontalScrollIndicator = NO;
+        [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
+        [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(0);
+        }];
+    }
+    return _collectionView;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E496AD66-B834-4646-B224-5DED95711B76</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>lazyloadCollectionView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>lazyloadCollectionView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

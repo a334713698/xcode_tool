@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initTableViewModel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)handleWithTable:(UITableView *)table {
+    table.delegate = self;
+    table.dataSource = self;
+    table.showsVerticalScrollIndicator = NO;
+    table.rowHeight = QMTableViewRowHeight;
+    table.tableFooterView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0.01, adaptHeight(10))];
+    if (Current_System_Version &gt; 11.0) {
+        table.estimatedSectionHeaderHeight = 10;
+        table.estimatedSectionFooterHeight = 0.01;
+    }
+    [table mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
+}
+
+#pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell* cell = [UITableViewCell new];
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    DLog(@"cell：%ld-%ld",indexPath.section,indexPath.row);
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return QMTableViewHeaderSectionHeight;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.01;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    return nil;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3C76CB99-69E6-429C-8A54-8E13C19FD1F4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>initTableViewModel</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>initTableViewModel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

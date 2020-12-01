@@ -3,21 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>createButton</string>
+	<string>lazyCreateSwiftView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>StringOrComment</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string></string>
+	<string>    private lazy var &lt;#view#&gt;: &lt;#class#&gt; = {
+        let &lt;#instance#&gt; = &lt;#class#&gt;()
+        self.addSubview(&lt;#instance#&gt;)
+        &lt;#instance#&gt;.snp.makeConstraints { (make) in
+
+        }
+        return &lt;#instance#&gt;
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>59844429-A414-4C7D-ACF7-06279D1C0419</string>
+	<string>C558B52D-2980-4A17-ADFE-9C81D54AB38A</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>createButton</string>
+	<string>lazyCreateSwiftView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>createButton</string>
+	<string>lazyCreateSwiftView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

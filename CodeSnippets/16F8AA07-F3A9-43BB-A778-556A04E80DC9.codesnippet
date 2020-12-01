@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initController_Swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // prama MARK - Property
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView.init(frame: CGRect.zero, style: UITableView.Style.grouped)
+        self.view.addSubview(tableView)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.showsVerticalScrollIndicator = false
+        tableView.separatorInset = UIEdgeInsets.zero
+        if IOS11_OR_LATER {
+            tableView.estimatedSectionHeaderHeight = 10
+            tableView.estimatedSectionFooterHeight = 0.01
+        }
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalTo(0)
+        }
+        return tableView
+    }()
+    
+    // prama MARK - VC life
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+    // prama MARK - UITableViewDelegate
+    func numberOfSections(in tableView: UITableView) -&gt; Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        return cell
+    }
+    
+    // prama MARK - UITableViewDataSource
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
+        return 44
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -&gt; CGFloat {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -&gt; CGFloat {
+        return 0.01
+    }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>16F8AA07-F3A9-43BB-A778-556A04E80DC9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>initController_Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>initController_Swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

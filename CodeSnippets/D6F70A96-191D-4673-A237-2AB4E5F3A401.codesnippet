@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>DK_initQMUIAlert</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    QMUIAlertController* alertVC = [[QMUIAlertController alloc] initWithTitle:&lt;#(nullable NSString *)#&gt; message:&lt;#(nullable NSString *)#&gt; preferredStyle:QMUIAlertControllerStyleAlert];
+    [alertVC addAction:[QMUIAlertAction actionWithTitle:&lt;#(nullable NSString *)#&gt; style:QMUIAlertActionStyleDefault handler:&lt;#^(__kindof QMUIAlertController * _Nonnull aAlertController, QMUIAlertAction * _Nonnull action)handler#&gt;]];
+    [alertVC showWithAnimated:YES];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D6F70A96-191D-4673-A237-2AB4E5F3A401</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>DK_initQMUIAlert</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>DK_initQMUIAlert</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

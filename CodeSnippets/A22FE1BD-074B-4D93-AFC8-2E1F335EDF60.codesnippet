@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazyloadSwiftTableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    private lazy var tableView: UITableView = {
+        let tableView = UITableView.init(frame: CGRect.zero, style: UITableView.Style.grouped)
+        self.view.addSubview(tableView)
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.showsVerticalScrollIndicator = false
+        tableView.separatorInset = UIEdgeInsets.zero
+        if IOS11_OR_LATER {
+            tableView.estimatedSectionHeaderHeight = 10
+            tableView.estimatedSectionFooterHeight = 0.01
+        }
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.snp.makeConstraints { (make) in
+            make.edges.equalTo(0)
+        }
+        return tableView
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A22FE1BD-074B-4D93-AFC8-2E1F335EDF60</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>lazyloadSwiftTableView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>lazyloadSwiftTableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

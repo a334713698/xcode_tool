@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>createButton</string>
+	<string>respondsDelegate_Swift</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>StringOrComment</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string></string>
+	<string>        if self.delegate != nil &amp;&amp; self.delegate!.responds(to: #selector(delegate?.)) {
+            self.delegate!.
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>59844429-A414-4C7D-ACF7-06279D1C0419</string>
+	<string>F015BF44-5A36-4479-9FCD-25F9E483EFEB</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>createButton</string>
+	<string>respondsDelegate_Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>createButton</string>
+	<string>respondsDelegate_Swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

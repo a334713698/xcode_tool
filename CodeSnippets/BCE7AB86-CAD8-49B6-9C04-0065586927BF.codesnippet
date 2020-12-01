@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>createButton</string>
+	<string>dk_weakSelf Code Snippet</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>StringOrComment</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string></string>
+	<string>__weak typeof(self) weakSelf = self;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>59844429-A414-4C7D-ACF7-06279D1C0419</string>
+	<string>BCE7AB86-CAD8-49B6-9C04-0065586927BF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>createButton</string>
+	<string>dk_weakSelf Code Snippet</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>createButton</string>
+	<string>dk_weakSelf Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
